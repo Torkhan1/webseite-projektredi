@@ -1,0 +1,309 @@
+body {
+    margin: 0;
+    background-color: rgb(134 184 197);
+}
+/*------------------
+Mobile first - code from here for mobile devices
+------------------*/
+
+
+
+/*------------------
+Navigation
+------------------*/
+.main-nav {
+    background-color: rgb(191, 193, 196);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.nav-link {
+    text-decoration: none;
+    color: rgb(19, 20, 20);
+    font-size: large;
+}
+
+.earth {
+    width: 60px;
+    height: 50px; 
+}
+
+/*--------------------------------
+header
+----------------------------------*/
+header {
+    background-image: url("./assets/tunisimage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin-right: 10%;
+   
+}
+.page-title {
+    font-size: 50px;
+}
+/*-----------------------------------
+main
+------------------------------------*/
+main h2 {
+    text-transform: uppercase;
+    color: #670b0b;
+}
+.Article p {
+    font-size:25px;
+}
+.Article {
+   margin: 35px;
+}
+
+/*---Parent--*/
+.parent {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.container {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #378131;
+    border-radius: 8px;
+    background-color: rgb(191 193 196);
+    margin: 10px;
+}
+
+.backgroundImage {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+}
+
+.details {
+    text-align: center;
+    height: 250px;
+    position: relative;
+}
+
+.route {
+    background-color: #b6b4bd;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(62, 38, 38);
+    text-align: center;
+    width: 60%;
+    padding: 10px;
+    border-radius: 8px;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 17%;
+}
+
+
+.route:hover {
+    background-color: #A0C28B;
+    color: white;
+}
+/*-------------------------------
+Image
+------------------------------------*/
+.Sidi-bousaid {
+    background-image: url(./assets/sidi\ bousaid.jpg);
+    border-radius: 6px;
+}
+
+.hammamet {
+    background-image: url(./assets/Marina\ hammamet.jpg);
+    border-radius: 6px;
+}
+
+.Tabarka {
+    background-image: url(./assets/tabarka.jpg);
+    border-radius: 6px;
+}
+
+.Bizerte {
+    background-image: url(./assets/Bizerte.jpg);
+}
+
+.Djerba {
+    background-image: url(./assets/Djerba.jpg);
+}
+
+.Sousse {
+    background-image: url(./assets/sousse.jpg);
+}
+
+.Elhaouaria {
+    background-image: url(./assets/Portelhaouariya.jpg);
+}
+
+.Ghar-Elmeleh {
+    background-image: url(./assets/GharElMelh.jpg);
+}
+
+.Avenue {
+    background-image: url(./assets/avenue\ hbib\ bourguiba.webp);
+
+}
+.Eljem {
+    background-image: url(./assets/eljem.jpg);
+}
+
+.Musium-bardo {
+    background-image: url(./assets/bardo.jpg);
+}
+
+.karthage {
+    background-image: url(./assets/kartage.jpg);
+}
+/*------------------------
+Footer
+-------------------------*/
+glow-on-hover:active {
+    color: rgb(58, 58, 230)
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.social-media {
+    justify-content: center;
+    display: flex;
+}
+footer {
+    margin-top: 150px;
+    background-color: rgb(191 193 196);
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: rgba(87, 89, 105, 0.884);
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    text-align: center;
+    padding:5px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: rgb(58, 58, 230)
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+.column-container{
+    display: flex;
+    justify-content: space-around;
+}
+.column-container ul li{
+    list-style-type: none;
+}
+/*----SIZE TABLET-----*/
+
+@media only screen and (min-width: 768px) {
+    .main-nav {
+        flex-direction: row;
+    }
+    .nav-link {
+        padding: 10px;
+    }
+    
+ }
+/*-----SIZE DESKTOP-----*/
+@media only screen and (min-width: 1281px) {
+    .main-nav {
+        flex-direction: row;
+    
+    }
+    .nav-link{
+        padding: 10px;
+    }
+     .box{
+     
+        position:relative;
+        display: inline-block;
+        justify-content: flex-end;
+        height: auto;
+        flex-direction: row; 
+        margin-left: 85px; 
+        font-size: x-large; 
+        
+    }
+}
+
+
